@@ -22,7 +22,7 @@ VALIDATE()
     echo  -e "Installation is  $R unsuccessful for $2  $N"
     exit 1
     echo -e "Installation is $G sucessful for $2  $N"
-
+    fi
 }
 
 ROOT_USER
