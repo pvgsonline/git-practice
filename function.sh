@@ -9,6 +9,7 @@ fi
 VALIDATE()
 {
     if [ $1 -ne 0 ]
+    then
     echo "Installation is not successful for $2"
     exit 1
     echo "Installation is sussceful for $2"
@@ -28,6 +29,7 @@ fi
 
 dnf list installed mysql
 if [ $? ne 0 ]
+then
 echo "mysql is not installed , going to install"
 dnf install mysql -y
 VALIDATE $? "MYSQL"

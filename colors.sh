@@ -8,6 +8,7 @@ Y="\e[33m"
 ROOT_USER()
 {
     if [ $USER -ne 0 ]
+    then
 echo "user needs root user privilages"
 exit 1
 fi
@@ -17,6 +18,7 @@ fi
 VALIDATE()
 {
     if [ $1 -ne 0 ]
+    then
     echo  -e "Installation is  $R unsuccessful for $2  $N"
     exit 1
     echo -e "Installation is $G sucessful for $2  $N"
@@ -38,6 +40,7 @@ fi
 
 dnf list installed mysql
 if [ $? ne 0 ]
+then
 echo "mysql is not installed , going to install"
 dnf install mysql -y
 VALIDATE $? "MYSQL"

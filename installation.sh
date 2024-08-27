@@ -2,6 +2,7 @@
 
 USER=$(id -u)
 if [ $USER -ne 0 ]
+then
 echo "user needs root user privilages"
 exit 1
 fi
@@ -24,9 +25,11 @@ fi
 
 dnf list installed mysql
 if [ $? ne 0 ]
+then
 echo "mysql is not installed , going to install"
 dnf install mysql -y
 if [ $? ne 0 ]
+then
 echo "mysql installation is not successful"
 exit 1
 else
