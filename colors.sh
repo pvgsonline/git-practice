@@ -21,6 +21,7 @@ VALIDATE()
     then
     echo  -e "Installation is  $R unsuccessful for $2  $N"
     exit 1
+    else
     echo -e "Installation is $G sucessful for $2  $N"
     fi
 }

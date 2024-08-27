@@ -12,6 +12,7 @@ VALIDATE()
     then
     echo "Installation is not successful for $2"
     exit 1
+    else
     echo "Installation is sussceful for $2"
     fi
 
