@@ -43,6 +43,6 @@ echo "$package is not installed" | tee -a $LOG_FILE
 dnf install $package -y &>>$LOG_FILE
 validate $? "$package" 
 else
-echo "$Y $package is already installed $N" | tee -a $LOG_FILE
+echo "$package is already $Y installed $N" | tee -a $LOG_FILE
 fi
 done
