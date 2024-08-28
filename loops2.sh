@@ -29,7 +29,7 @@ ROOT_USER
 
 for package in $@
 
-dnf list validate $package
+dnf list installed $package
 if [ $? -ne 0 ]
 then
 echo "$Y package is already installed $N"
