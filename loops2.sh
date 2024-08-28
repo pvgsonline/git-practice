@@ -33,9 +33,9 @@ dnf list installed $package
 if [ $? -ne 0 ]
 then
 echo "package is not installed"
-dnf install $package -y
-VALIDATE()
+dnf install $package -done
+VALIDATE $? "$package"
 else 
-echo  -e "$Y package is already isntalled $N"
+echo -e "$Y package is already isntalled $N"
 fi
-done
+donedone
