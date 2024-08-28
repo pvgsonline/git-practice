@@ -18,6 +18,7 @@ ROOT_USER()
     if [ $USERID -ne 0 ]
     then
     echo -e " $R User needs root privilages $N" | tee -a $LOG_FILE
+    exit 1
     fi
 }
 
