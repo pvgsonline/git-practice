@@ -21,7 +21,7 @@ VALIDATE()
     then
     echo -e "$2 installation is $R unsucessful $N"
     else
-    echo "$2 instalaltion is $G sucessful $N"
+    echo -e "$2 instalaltion is $G sucessful $N"
     fi
 }
 
@@ -32,9 +32,10 @@ do
 dnf list installed $package
 if [ $? -ne 0 ]
 then
-echo "$Y package is already installed $N"
-else
+echo "package is not installed"
 dnf install $package -y
 VALIDATE()
+else 
+echo  -e "$Y package is already isntalled $N"
 fi
 done
