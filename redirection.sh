@@ -32,6 +32,8 @@ VALIDATE()
     fi
 }
 
+ROOT_USER
+
 for package in $@
 do
 dnf list installed $package &>>$LOG_FILE
