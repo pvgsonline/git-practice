@@ -36,6 +36,6 @@ echo "package is not installed"
 dnf install $package -y
 VALIDATE $? "$package"
 else 
-echo -e "$Y package is already isntalled $N"
+echo -e "$Y package is already installed $N"
 fi
 done
