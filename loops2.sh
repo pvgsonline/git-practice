@@ -12,7 +12,7 @@ ROOT_USER()
     then
     echo -e " $R User needs root privilages $N"
     exit 1
-
+    fi
 }
 
 VALIDATE()
