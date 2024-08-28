@@ -38,4 +38,4 @@ VALIDATE $? "$package"
 else 
 echo -e "$Y package is already isntalled $N"
 fi
-donedone
+done
