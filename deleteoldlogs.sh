@@ -20,8 +20,9 @@ echo "files : $FILE"
 while IFS= read -r file  #IFS - internal field separator
 
 do
-echo -e " $R deleting the file $N : $FILES"
+rm $FILES
+echo -e " $R deleted the file $N : $FILES"
 
 done <<< $FILES
-    
+
 
