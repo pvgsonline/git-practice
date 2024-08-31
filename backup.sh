@@ -33,7 +33,7 @@ then
 ZIPFILE="$DESTDIR/app-logs-$TIMESTAMP.zip"
 find $SOURCEDIR -name "*.log" -mtime +14 | zip "$ZIPFILE" -@
 
-if [ -f ZIPFILE ]
+if [ -f $ZIPFILE ]
 then
 echo "Backup File is Zipped"
 while IFS= read -r file
