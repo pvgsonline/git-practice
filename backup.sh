@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SOURCEDIR=$1
-DESTDIR=$2
-DAYS=${3;-14}
+DESTDIR=$2 #/home/ec2-user/app
+DAYS=${3:-14}
 TIMESTAMP=$(date +%Y-%m-%d-%M-%D-%S)
 
 if [ $# lt 2 ]
