@@ -5,7 +5,7 @@ DESTDIR=$2 #/home/ec2-user/app
 DAYS=${3:-14}
 TIMESTAMP=$(date +%Y-%m-%d-%M-%D-%S)
 
-if [ $# lt 2 ]
+if [ $# -lt 2 ]
 then
 exit 1
 fi
