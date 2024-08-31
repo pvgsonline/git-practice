@@ -28,7 +28,7 @@ fi
 
 FILES=$(find $SOURCEDIR -name "*.log" -mtime +14)
 
-if [ ! -Z FILES ]
+if [ ! -Z $FILES ]
 then
 ZIPFILE="$DESTDIR/app-logs-$TIMESTAMP.zip"
 find $SOURCEDIR -name "*.log" -mtime +14 | zip "$ZIPFILE" -@
