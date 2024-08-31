@@ -15,7 +15,7 @@ exit 1
 fi
 
 FILES=$(find $SOURCEDIR -name "*.log" -mtime +14)
-echo "files : $FILE"
+echo "files : $FILES"
 
 while IFS= read -r file  #IFS - internal field separator
 
