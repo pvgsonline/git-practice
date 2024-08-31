@@ -38,7 +38,7 @@ then
 echo "Backup File is Zipped"
 while IFS= read -r file
 do
-rm -rf $FILES
+rm -rf $file
 echo "old files deleted sucessfully"
 done <<< $FILES
 else
