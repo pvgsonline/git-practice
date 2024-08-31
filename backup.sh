@@ -26,12 +26,12 @@ echo "Destination directory doesn't exist"
 exit 1
 fi
 
-FILES=$(find $SOURCEDIR -name "*.log" -mtime +14)
+FILES=$(find ${SOURCEDIR} -name "*.log" -mtime +14)
 
 if [ ! -z $FILES ]
 then
 ZIPFILE="$DESTDIR/app-logs-$TIMESTAMP.zip"
-find $SOURCEDIR -name "*.log" -mtime +14 | zip "$ZIPFILE" -@
+find ${SOURCEDIR} -name "*.log" -mtime +14 | zip "$ZIPFILE" -@
 
 if [ -f $ZIPFILE ]
 then
