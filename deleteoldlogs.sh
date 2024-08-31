@@ -6,7 +6,7 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-if [ -d $SOURCEDIR]
+if [ -d $SOURCEDIR ]
 then
 echo -e "$G directory exists $N"
 else
