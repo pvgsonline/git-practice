@@ -2,7 +2,7 @@
 
 FILE=/home/user/assignement.txt
 
-while IFS= read -r line
+while IFS= read -r word
 do
-grep -wc $line
+grep -c $word
 done <<< $FILE
