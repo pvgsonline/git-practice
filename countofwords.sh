@@ -7,4 +7,4 @@ FILE=/home/user/assignement.txt
 while IFS= read -r line
 do
 grep -o $line | wc -l
-#done <<< $FILE
+done <<< $FILE
