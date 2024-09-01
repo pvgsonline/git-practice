@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=$(cat /home/user/assignement.txt)
+FILE=$(cat /home/ec2-user/assignement.txt)
 
 #grep -wc 
 
