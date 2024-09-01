@@ -33,7 +33,8 @@ if [ ! -z $FILES ]
 then
 echo "files are found"
 ZIPFILE="$DESTDIR/app-$TIMESTAMP.zip"
-find ${SOURCEDIR} -name "*.log" -mtime +14 | zip "$ZIPFILE" -@
+#find ${SOURCEDIR} -name "*.log" -mtime +14 | zip "$ZIPFILE" -@
+$FILES | zip "ZIPFILE" -@
 
 if [ -f $ZIPFILE ]
 then
