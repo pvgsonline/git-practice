@@ -27,6 +27,7 @@ exit 1
 fi
 
 FILES=$(find ${SOURCEDIR} -name "*.log" -mtime +14)
+echo "files : $FILES"
 
 if [ ! -z $FILES ]
 then
