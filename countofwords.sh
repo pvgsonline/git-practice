@@ -6,6 +6,6 @@ FILE=$(cat /home/ec2-user/assignement.txt)
 
 while IFS= read -r line
 do
-grep -o $line | wc -l
-#echo "$line"
+#grep -o $line | wc -l
+echo "$line"
 done <<< $FILE
