@@ -4,5 +4,5 @@ FILE=/home/user/assignement.txt
 
 while IFS= read -r word
 do
-grep -c $word
+grep -wc $word
 done <<< $FILE
