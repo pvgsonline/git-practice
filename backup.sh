@@ -27,11 +27,12 @@ exit 1
 fi
 
 FILES=$(find ${SOURCEDIR} -name "*.log" -mtime +14)
-echo "files : $FILES"
+echo "files : $FILES"   
 
 if [ ! -z $FILES ]
 then
-ZIPFILE="$DESTDIR/app-logs-$TIMESTAMP.zip"
+echo "files are found"
+ZIPFILE="$DESTDIR/app-$TIMESTAMP.zip"
 find ${SOURCEDIR} -name "*.log" -mtime +14 | zip "$ZIPFILE" -@
 
 if [ -f $ZIPFILE ]
